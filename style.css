@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    background: #32475e;
+    font-family: 'Poppins', sans-serif;
+    color: #fefefe;
+}
+
+
+header {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px 15px 0px;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+h1,
+#add-book {
+    margin: 0 auto;
+    color: #fefefe;
+}
+
+#add-book {
+    background-color: #AA3939;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 100px;
+    margin: 10px 0px;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+  
+.modal-content {
+    margin: 15% auto;
+    padding: 20px;
+    border: solid #1abc9c 2px;
+    width: 40%;
+}
+
+label {
+    font-size: 22px;
+}
+
+input {
+    border: none;
+    height: 30px;
+    width: 100%;
+    background: #fefefe;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px 0px 20px 0px;
+    color: black;
+    font-size: 20px;
+}
+
+form {
+    margin-top: 25px;
+}
+
+#read-label {
+    display: inline-block;
+    text-align: right;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#read-input {
+    font-size: 24px;
+    width: 24px;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+#submit-button {
+    margin: 4% 40% 3% 40%;
+    height: 5%;
+    width: 20%;
+    background: #AA3939;
+    color: #fefefe;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#book-display {
+    width: 80vw;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    border: solid #4c6c8a 5px;
+    gap: 10px;
+    background-color: #1abc9c;
+}
+
+.books {
+    background-color: #405a74;
+    border: none;
+    border-radius: 3px;
+}
+
+h3,
+p {
+    text-align: center;
+    background-color: #405a74;
+    width: 100%;
+    padding: 0 15px;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 24px;
+    float: left;
+}
+
+hr {
+    width: 90%;
+    border: solid #1abc9c 1px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+button {
+    font-size: 13px;
+}
+
+.true-read-button,
+.false-read-button,
+.delete-button {
+    border: solid transparent 1px;
+    border-radius: 1px;
+    height: 40px;
+    width: 80px;
+}
+
+.true-read-button,
+.false-read-button {
+    margin: 5px 0px 15px 40px;
+}
+
+button:hover,
+#submit-button:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+}
+
+.false-read-button:hover {
+    box-shadow: inset 0 0 100px 100px rgba(108, 243, 81, 0.301);
+}
+
+.true-read-button {
+    background-color: #1abc9c;
+    color: #fefefe
+}
+
+.false-read-button {
+    background-color: #fefefe;
+    color: #1abc9c;
+}
+
+.delete-button {
+    background-color: red;
+    float: inline-end;
+    margin: 5px 40px 5px 0px;
+}

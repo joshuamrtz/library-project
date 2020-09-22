@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Library</title>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' href='style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<header>
+    <h1>My Library</h1>
+    <button id='add-book'>Add Book</button>
+</header>
+<div id='add-modal' class='modal'>
+    <div class='modal-content'>
+        <div class='close'>&times;</div>
+        <h2>Add a New Book to Your Library</h2>
+        <hr>
+        <form>
+            <label for='title-input'>Book Title:</label>
+            <br>
+            <input type='text' id='title-input' value='' placeholder='Lord of the Flies'>
+            <br>
+            <label for='author-input'>Author:</label>
+            <br>
+            <input type='text' id='author-input' value='' placeholder='William Golding'>
+            <br>
+            <label for='pages-input'>Pages:</label>
+            <br>
+            <input type='text' id='pages-input' value='' placeholder='224 pages'>
+            <br>
+            <label id='read-label' for='read-input'>Have you read the book? Check if yes:</label>
+            <input type='checkbox' id='read-input' value=''>
+            <br>
+            <input type='submit' id='submit-button' value='Submit'>
+        </form>
+    </div>
+</div>
+<div id='book-display'></div>
+
+<script src="script.js"></script>
+</body>
+</html>
